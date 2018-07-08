@@ -1,0 +1,48 @@
+{
+  "name": "microbundle-react-jsx-demo",
+  "version": "0.0.0",
+  "source": "src/index.jsx",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "description": "demo",
+  "repository": "luxp/microbundle-react-jsx-demo",
+  "author": {
+    "name": "luxp",
+    "email": "luxianpo@gmail.com",
+    "url": "luxianpo.com"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "build": "rm -rf dist && microbundle --jsx React.createElement",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "component"
+  ],
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "@storybook/react": "^3.4.8",
+    "@storybook/addons": "^3.4.8",
+    "@storybook/addon-storyshots": "^3.4.7",
+    "@storybook/addon-actions": "^3.4.8",
+    "@storybook/addon-links": "^3.4.8",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,2 @@
+function t(t){return t&&"object"==typeof t&&"default"in t?t.default:t}var e=t(require("react")),r=t(require("prop-types")),o=function(t){function r(){t.apply(this,arguments)}return t&&(r.__proto__=t),(r.prototype=Object.create(t&&t.prototype)).constructor=r,r.prototype.render=function(){return e.createElement("div",null,this.props.content)},r}(e.Component);o.propTypes={content:r.string},module.exports=o;
+//# sourceMappingURL=index.js.map
